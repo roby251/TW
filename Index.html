@@ -16,6 +16,9 @@
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
@@ -27,26 +30,54 @@
         <div class="contenedor">
             <div class="navbar">
                 <a class="logo" href="Index.html">
-                    <img src="img/SaitamaHero.jpg" alt="Un heroe sin igual" height="250"> <!--tener nombre consistente-->
+                    <img class="logo-img" src="img/SaitamaHero.jpg" alt="Un heroe sin igual"> <!--tener nombre consistente-->
                 </a>
 
                 <nav class="navegacion">
-                    <a href="InscripciónHeroe.html" >¿Quieres ser un heroe?</a>
-                    <a href="RakingHeroes.html">Galeria de heroes</a>
+                    <a href="InscripciónHeroe.html" class="navegacion_enlace">¿Quieres ser un heroe?</a>
+                    <a href="RakingHeroes.html" class="navegacion_enlace">Galeria de heroes</a>
                 </nav>
                 <video controls autoplay HIDDEN = TRUE> 
-                    <source src="Multimedia/FondoSonoro.mp3" type="video/mp4">
+                    <!-- <source src="Multimedia/FondoSonoro.mp3" type="video/mp4"> -->
                 </video>
-
             </div>
+        </div>
 
+        <div class="header_texto">
+            <h2 class="no-margin">Blog de SuperHeroes</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores consejos para convertirte en uno</p>
         </div>
 
     </header>
 
+    <div class="contenedor contenido-principal">
+
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada_imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog1">
+                    </picture>
+                </div>
+
+                <div class="entrada_contenido">
+                    <h4 class="no-margin">Top SuperHeroes</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="RakingHeroes.html" class="boton boton--primario">Leer Más</a>
+                </div>
+
+            </article>
+
+        </main>
+
+    </div>
+
 
     
     
-    
+    <script src="js/modernizr.js"></script>
 </body>
 </html>

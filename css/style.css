@@ -1,0 +1,87 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+
+    --primario:  #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/** Header **/
+.webp .header {
+    background-image: url(../img/banner1.webp);
+}
+.no-webp .header {
+    background-image: url(../img/banner1.jpg);
+}
+
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header_texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+
+.navbar {
+    padding-top: 4rem;
+}
+.logo {
+    color: var(--blanco);
+}
+.logo-img {
+    width: 100px;
+    height: 150px;
+}
+
+
+.navegacion_enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+
