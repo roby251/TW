@@ -5,6 +5,7 @@
     --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
+    --rojo: #FF0000;
 }
 
 html {
@@ -63,6 +64,11 @@ img {
     text-align: center;
 }
 
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /** Header **/
 .webp .header {
     background-image: url(../img/banner1.webp);
@@ -75,7 +81,7 @@ img {
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
 }
 .header_texto {
     text-align: center;
@@ -90,14 +96,8 @@ img {
 .logo {
     color: var(--blanco);
 }
-.logo__nombre {
-    font-weight: 400;
-}
-.logo__bold {
-    font-weight: 700;
-}
 .logo-img {
-    width: 100px;
+    width: 200px;
     height: 150px;
 }
 
@@ -126,16 +126,27 @@ img {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
+    transition: 1s;
 }
 
 .boton:hover {
     cursor: pointer;
+    background-position: right;
 }
 .boton--primario {
-    background-color: var(--negro);
+    background-image: radial-gradient(circle at 94.83% 18.61%, #fc6848 0, #f24f43 25%, #e2283c 50%, #d10037 75%, #c40037 100%);
 }
 
 
+
+
+
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
 
 
 @media (min-width:768px){
@@ -157,6 +168,5 @@ img {
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem; 
     }
-
 
 }
