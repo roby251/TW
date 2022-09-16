@@ -25,70 +25,84 @@
                 <a href="RakingHeroes.html">Galeria de héroes</a> 
             </div>
         </nav>
+        <div class="formularios">
+            <form action="" class="formulario" id="f2" class="col-75">
+                <p>Pre-requisitos:</p>
+                <ul>
+                    <li>Ser adulto (18+)</li>
+                    <li>Ser estable mentalmente</li>
+                    <li>Disponibilidad total</li>
+                    <li>Pagar inscripción</li>
+                </ul>
+            </form>
+            <form action="" class="formulario" id="f1" class="col-25">
+                <div id="main" class="Campo">
+                    <div class="col-25">
+                        <label for="nombreh">Nombre de héroe:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="CampoText" type=text name=NH placeholder="Ingrese nombre de héroe">
+                    </div>
+                </div>
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="poderes">Poderes:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="CampoText" type=text name=NH placeholder="Ingrese sus poderes">
+                    </div>
+                </div>
+                
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="genero">Género:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type=radio name=sex value="M">Masculino
+                        <input type=radio name=sex value="F">Femenino
+                    </div>
+                    
+                </div>
+        
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="Diasdisponible">Días disponibles:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type=checkbox name=dd value="L">Lunes
+                        <input type=checkbox name=dd value="M">Martes
+                        <input type=checkbox name=dd value="MM">Miercoles
+                        <input type=checkbox name=dd value="J">Jueves
+                        <input type=checkbox name=dd value="V">Viernes
+                        <input type=checkbox name=dd value="S">Sabado
+                        <input type=checkbox name=dd value="D">Domingo
+                    </div>
+                    
+                </div>
+                
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="peso">Peso:</label>
+                    </div>
+                    <div class="col-75">
+                        <select class="CampoText" name=peso>
+                            <option> menos de 76 [Kg] </option>
+                            <option>entre 76 y 101.6 [Kg] </option>
+                            <option>mayor de 101.6 [Kg] </option>            
+                        </select>
+                    </div>
+                    
+        
+        
+                </div>
+                <input class="BotonCred" type=submit value="Crear credencial">
+            </form>
     </div>
-    <form action="" class="formulario">
-        <div id="main" class="Campo">
-            <div class="col-25">
-                <label for="nombreh">Nombre de héroe:</label>
-            </div>
-            <div class="col-75">
-                <input class="CampoText" type=text name=NH placeholder="Ingrese nombre de héroe">
-            </div>
-        </div>
-        <div class="Campo">
-            <div class="col-25">
-                <label for="poderes">Poderes:</label>
-            </div>
-            <div class="col-75">
-                <input class="CampoText" type=text name=NH placeholder="Ingrese sus poderes">
-            </div>
-        </div>
+    
         
-        <div class="Campo">
-            <div class="col-25">
-                <label for="genero">Género:</label>
-            </div>
-            <div class="col-75">
-                <input type=radio name=sex value="M">Masculino
-                <input type=radio name=sex value="F">Femenino
-            </div>
-            
-        </div>
-
-        <div class="Campo">
-            <div class="col-25">
-                <label for="Diasdisponible">Días disponibles:</label>
-            </div>
-            <div class="col-75">
-                <input type=checkbox name=dd value="L">Lunes
-                <input type=checkbox name=dd value="M">Martes
-                <input type=checkbox name=dd value="MM">Miercoles
-                <input type=checkbox name=dd value="J">Jueves
-                <input type=checkbox name=dd value="V">Viernes
-                <input type=checkbox name=dd value="S">Sabado
-                <input type=checkbox name=dd value="D">Domingo
-            </div>
-            
-        </div>
         
-        <div class="Campo">
-            <div class="col-25">
-                <label for="peso">Peso:</label>
-            </div>
-            <div class="col-75">
-                <select class="CampoText" name=peso>
-                    <option> menos de 76 [Kg] </option>
-                    <option>entre 76 y 101.6 [Kg] </option>
-                    <option>mayor de 101.6 [Kg] </option>            
-                </select>
-            </div>
-            
-
-
-        </div>
-        <input class="BotonCred" type=submit value="Crear credencial">
-    </form>
-
+    </div>
+    
     
     <video controls autoplay HIDDEN = TRUE loop> 
         <source src="Multimedia/FondoSonoroInscr.mp3" type="video/mp4">

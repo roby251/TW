@@ -1,38 +1,52 @@
 
-.col-25{
-    
-  float: left;
-  width: 25%;
-}
-.col-75{
-    float: left;
-    width: 75%;
-}
 .lnaveg{
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-top: 19px;
     border-radius:30px;
     background-color: black;
     color: beige;
     padding: 0.4rem;
+    text-align: center;
 }
 .naveg{
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+#f1{
+    
+
+    width: 85%;
+    flex-direction: column;
+    flex: auto;
+
+}
+#f2{
+    height:30%;
+    width: 55%;
+    float: left;
 }
 .formulario {
     background-color: aquamarine;
-    width: 65%;
-    padding: 1rem;
-    border: 2px solid rgb(238, 248, 100);
-    margin: -36rem auto 0 auto;
+    padding: 1rem 1rem 0px 1.8rem;
+    border: 2px solid rgb(214, 223, 84);
+    margin: 1rem 3rem 0 3rem;
     
 }
+ul{
+    list-style-type: square;
+  }
+.formularios{
+    flex-direction: column;
+    flex: auto;
+    justify-content: space-between;
+}
 .FondoInscrip {
-    background-image: url(../Multimedia/FondoInscr.jpg);
-    height: 45.2rem;
+    background-image: url(../Multimedia/FondoInscr1.jpg);
+    
+    height: 85rem;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 *{  /* Usar todo el espacio de la pagina  */
     margin:0; padding:0;
@@ -52,7 +66,7 @@ html {
 }
 body {
     font-family: 'Bangers';
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     line-height: 2.7;
 }
 .BotonCred{
@@ -61,11 +75,11 @@ body {
     text-align: center;
     padding: 1rem 3rem;
     font-size: 1.8rem;
-    text-transform: uppercase;
     font-weight: 700;
     margin: 2rem 0 2rem 0;
     border: none;
     width: 100%;
+    
 }
 
 a {
@@ -76,4 +90,49 @@ a {
     text-align: center;
     width:100%;
     padding: 5px;
+}
+@media (min-width: 768px) {/*celular a tablet*/ 
+    .col-25{
+        
+      float: left;
+      width: 25%;
+    }
+    .col-75{
+        float: left;
+        width: 75%;
+    }
+    body{
+        font-size: 1.5rem;
+    }
+
+    .lnaveg{
+        font-size: 2.3rem;
+    }
+    
+    .FondoInscrip {
+        height: 45.2rem;
+    }
+    #f2{
+        width: 20%;
+    }
+    #f1{
+        flex-direction: row;
+        float: left;
+        width: 65%;
+        height:40%;
+
+    }
+    .formularios{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .naveg{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        
+    }
 }
