@@ -120,10 +120,12 @@ main .ranking-list {
 }
 .contenedor-ranking-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .imagen-ranking-list {
     width: 48%;
+    height: 50%;
+    
 }
 .ranking-list .contenido-textos {
     width: 48%;
@@ -134,14 +136,14 @@ main .ranking-list {
 .contenido-textos h3 span {
     background: radial-gradient(circle at 94.83% 18.61%, #fc6848 0, #f24f43 25%, #e2283c 50%, #d10037 75%, #c40037 100%);
     color: #fff;
-    border-radius: 1000%;
+    border-radius: 100%;
     display: inline-block;
     text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-    margin-right: 5px;
+    margin-right: 25px;
 }
 .contenido-textos {
     padding: 0px 0px 30px 15px;

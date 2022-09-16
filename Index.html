@@ -15,8 +15,7 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -38,9 +37,6 @@
                     <a href="InscripciónHeroe.html" class="navegacion_enlace">¿Quieres ser un heroe?</a>
                     <a href="RankingHeroes.html" class="navegacion_enlace">Galeria de heroes</a>
                 </nav>
-                <video controls autoplay HIDDEN = TRUE> 
-                    <!-- <source src="Multimedia/FondoSonoro.mp3" type="video/mp4"> -->
-                </video>
             </div>
         </div>
 
@@ -55,6 +51,22 @@
 
         <main class="blog">
             <h3 class="titulo">Contenido Del Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada_imagen">
+                    <picture>
+                        <video onloadedmetadata="this.muted = true" controls autoplay>
+                            <source src="Multimedia/fondo - One Punch Man Official Trailer_1080p.mp4" type="video/mp4">
+                        </video>
+                    </picture>
+                </div>
+
+                <div class="entrada_contenido">
+                    <h4 class="no-margin">Trailer Oficial</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                    <a href="RakingHeroes.html" class="boton boton--primario">Leer Más</a>
+                </div>
+            </article>
 
             <article class="entrada">
                 <div class="entrada_imagen">
