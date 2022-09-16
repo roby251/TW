@@ -27,6 +27,10 @@ body {
     margin: 0 auto;
 }
 
+.titulo{
+    margin-bottom: 60px;
+}
+
 a {
     text-decoration: none;
 }
@@ -125,6 +129,8 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
     border: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton:hover {
