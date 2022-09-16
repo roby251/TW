@@ -201,7 +201,6 @@ img {
     .header_texto {
         margin-top: 15rem;
     }
-
     .barra {
         display: flex;
         justify-content: space-between;
@@ -217,5 +216,4 @@ img {
         column-gap: 4rem; 
     }
    
-
 }
