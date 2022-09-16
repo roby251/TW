@@ -1,5 +1,5 @@
 :root {
-    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteHeading: 'Bangers', cursive;
 
     --primario: #e41212;
     --gris: #e1e1e1;
@@ -18,6 +18,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.6rem;
     line-height: 1.5;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /** Globales **/
@@ -90,7 +92,6 @@ img {
     color: var(--blanco);
     margin-top: 5rem;
 }
-
 .barra {
     padding-top: 5rem;
 }
@@ -168,7 +169,6 @@ img {
     padding: 1rem;
 }
 
-
 .module-list_item {
     -webkit-box-align: center;
     grid-column-gap: 12px;
@@ -197,6 +197,77 @@ img {
 }
 
 
+/** Inscripcion Heroes **/
+
+.lnaveg{
+    font-size: 2rem;
+    margin-top: 19px;
+    border-radius:30px;
+    background-color: black;
+    color: beige;
+    padding: 0.4rem;
+    text-align: center;
+}
+.naveg{
+    flex-direction: column;
+}
+
+#f1{
+    width: 85%;
+    flex-direction: column;
+    flex: auto;
+}
+#f2{
+    font-family: var(--fuenteHeading);
+    height:30%;
+    width: 55%;
+    float: left;
+}
+.formulario {
+    font-family: var(--fuenteHeading);
+    background-color: aquamarine;
+    padding: 1rem 1rem 0px 1.8rem;
+    border: 2px solid rgb(214, 223, 84);
+    margin: 1rem 3rem 0 3rem;
+    
+}
+ul{
+    list-style-type: square;
+  }
+.formularios{
+    font-family: var(--fuenteHeading);
+    flex-direction: column;
+    flex: auto;
+    justify-content: space-between;
+}
+.FondoInscrip {
+    background-image: url(../img/banner1.webp);
+    font-family: var(--fuenteHeading);
+    height: 85rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.BotonCred{
+    color: red;
+    background-color: yellow;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 2rem 0 2rem 0;
+    border: none;
+    width: 100%;
+    
+}
+.CampoText{
+    text-align: center;
+    width:100%;
+    padding: 5px;
+}
+
+/*celular a tablet*/ 
+
 @media (min-width:768px){
     .header_texto {
         margin-top: 15rem;
@@ -215,5 +286,35 @@ img {
         grid-template-columns: 2fr 1fr;
         column-gap: 4rem; 
     }
-   
+    .col-25{
+        float: left;
+        width: 25%;
+    }
+    .col-75{
+        float: left;
+        width: 75%;
+    }
+    .FondoInscrip {
+        height: 45.2rem;
+    }
+    #f2{
+        width: 20%;
+    }
+    #f1{
+        flex-direction: row;
+        float: left;
+        width: 65%;
+        height:40%;
+  
+    }
+    .formularios{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;    
+    }
+    body {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
 }

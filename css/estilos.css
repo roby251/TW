@@ -211,3 +211,25 @@ main .ranking-list {
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+
+
+@media (min-width:768px){
+    .header_texto {
+        margin-top: 15rem;
+    }
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem; 
+    }
+}

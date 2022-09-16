@@ -4,40 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plantilla de Inscripcion</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="img/icons8-saitama-96.jpg">
+    <meta name="description" content="Pagina web de blog sobre One Punch Man">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <form action="">
-        <p>Nombre de heroe: 
-            <input type=text name=NH placeholder="Ingrese nombre de heroe">
-        <p>Poderes: 
-            <input type=text name=NH placeholder="Ingrese sus poderes">
-        
-        <p>Genero:
-            <input type=radio name=sex value="M">M
-            <input type=radio name=sex value="F">F
-        <p>Dias disponible:
-            <input type=checkbox name=dd value="L">Lunes
-            <input type=checkbox name=dd value="M">Martes
-            <input type=checkbox name=dd value="MM">Miercoles
-            <input type=checkbox name=dd value="J">Jueves
-            <input type=checkbox name=dd value="V">Viernes
-            <input type=checkbox name=dd value="S">Sabado
-            <input type=checkbox name=dd value="D">Domingo
-            
-            <p>Peso:
-            <select name=peso>
-                <option> menos de 76[Kg] </option>
-                <option>76-101.6[Kg] </option>
-                <option>mayor de 101.6 [Kg] </option>
-            </select>
-             <p><input type=submit value="Crear credencial">
-    </form>
-    <a href="Index.html">Heroes disponibles</a> 
-    <a href="RakingHeroes.html">Galeria de heroes</a> 
 
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <div class="logo" href="Index.html">
+                    <img class="logo-img" src="img/OPM_Logo.webp" alt="One Punch Man Logo"> <!-- tener nombre consistente-->
+                </div>
+
+                <nav class="navegacion">
+                    <a href="Index.html" class="navegacion_enlace">Heroes disponibles</a>
+                    <a href="RankingHeroes.html" class="navegacion_enlace">Galeria de heroes</a>
+                </nav>
+                <video controls autoplay HIDDEN = TRUE> 
+                    <!-- <source src="Multimedia/FondoSonoro.mp3" type="video/mp4"> -->
+                </video>
+            </div>
+        </div>
+
+        <div class="header_texto">
+            <h2 class="no-margin">Blog de SuperHeroes</h2>
+            <p class="no-margin">Aprende de los expertos con los mejores consejos para convertirte en uno</p>
+        </div>
     
+    </header>
 
+
+    <div class="formularios">
+            <form action="" class="formulario" id="f2" class="col-75">
+                <p>Pre-requisitos:</p>
+                <ul>
+                    <li>Ser adulto (18+)</li>
+                    <li>Ser estable mentalmente</li>
+                    <li>Disponibilidad total</li>
+                    <li>Pagar inscripción</li>
+                </ul>
+            </form>
+            <form action="" class="formulario" id="f1" class="col-25">
+                <div id="main" class="Campo">
+                    <div class="col-25">
+                        <label for="nombreh">Nombre de héroe:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="CampoText" type=text name=NH placeholder="Ingrese nombre de héroe">
+                    </div>
+                </div>
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="poderes">Poderes:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="CampoText" type=text name=NH placeholder="Ingrese sus poderes">
+                    </div>
+                </div>
+                
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="genero">Género:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type=radio name=sex value="M">Masculino
+                        <input type=radio name=sex value="F">Femenino
+                    </div>
+                    
+                </div>
+        
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="Diasdisponible">Días disponibles:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type=checkbox name=dd value="L">Lunes
+                        <input type=checkbox name=dd value="M">Martes
+                        <input type=checkbox name=dd value="MM">Miercoles
+                        <input type=checkbox name=dd value="J">Jueves
+                        <input type=checkbox name=dd value="V">Viernes
+                        <input type=checkbox name=dd value="S">Sabado
+                        <input type=checkbox name=dd value="D">Domingo
+                    </div>
+                    
+                </div>
+                
+                <div class="Campo">
+                    <div class="col-25">
+                        <label for="peso">Peso:</label>
+                    </div>
+                    <div class="col-75">
+                        <select class="CampoText" name=peso>
+                            <option> menos de 76 [Kg] </option>
+                            <option>entre 76 y 101.6 [Kg] </option>
+                            <option>mayor de 101.6 [Kg] </option>            
+                        </select>
+                    </div>
+                    
+        
+        
+                </div>
+                <input class="BotonCred" type=submit value="Crear credencial">
+            </form>
+    </div>
+
+    <footer class="footer" style="margin-top: auto;">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <img class="logo-img" src="img/logo2.jpg" alt="Un heroe sin igual">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="Index.html" class="navegacion_enlace">Heroes disponibles</a>
+                    <a href="RankingHeroes.html" class="navegacion_enlace">Galeria de heroes</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 </html>
