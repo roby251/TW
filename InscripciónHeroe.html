@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Planilla de inscripcion</title>
     <link rel="stylesheet" href="/Css/normalize.css">
     <link rel="stylesheet" href="/Css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,48 +13,82 @@
 
 </head>
 <body>
-    <div class="FondoInscrip"></div>
+    
+    <div class="FondoInscrip">
+        <nav class="naveg">
+            <div class="lnaveg">
+                <a href="Index.html">Héroes disponibles</a> 
+            </div>
+            <div class="lnaveg">
+                <label for="TituloPLan">Plantilla de inscripción para convertirse en héroe</label>
+            </div>
+            <div class="lnaveg">
+                <a href="RakingHeroes.html">Galeria de héroes</a> 
+            </div>
+        </nav>
+    </div>
     <form action="" class="formulario">
         <div id="main" class="Campo">
-            <label for="nombreh">Nombre de heroe</label>
-            <input class="CampoText" type=text name=NH placeholder="Ingrese nombre de heroe">
+            <div class="col-25">
+                <label for="nombreh">Nombre de héroe:</label>
+            </div>
+            <div class="col-75">
+                <input class="CampoText" type=text name=NH placeholder="Ingrese nombre de héroe">
+            </div>
         </div>
         <div class="Campo">
-            <label for="poderes">Poderes</label>
-            <input class="CampoText" type=text name=NH placeholder="Ingrese sus poderes">
+            <div class="col-25">
+                <label for="poderes">Poderes:</label>
+            </div>
+            <div class="col-75">
+                <input class="CampoText" type=text name=NH placeholder="Ingrese sus poderes">
+            </div>
         </div>
         
         <div class="Campo">
-            <label for="genero">Genero</label>
-            <input type=radio name=sex value="M">M
-            <input type=radio name=sex value="F">F
+            <div class="col-25">
+                <label for="genero">Género:</label>
+            </div>
+            <div class="col-75">
+                <input type=radio name=sex value="M">Masculino
+                <input type=radio name=sex value="F">Femenino
+            </div>
+            
         </div>
 
         <div class="Campo">
-            <label for="Diasdisponible">Dias disponible:</label>
-            <input type=checkbox name=dd value="L">Lunes
-            <input type=checkbox name=dd value="M">Martes
-            <input type=checkbox name=dd value="MM">Miercoles
-            <input type=checkbox name=dd value="J">Jueves
-            <input type=checkbox name=dd value="V">Viernes
-            <input type=checkbox name=dd value="S">Sabado
-            <input type=checkbox name=dd value="D">Domingo
+            <div class="col-25">
+                <label for="Diasdisponible">Días disponibles:</label>
+            </div>
+            <div class="col-75">
+                <input type=checkbox name=dd value="L">Lunes
+                <input type=checkbox name=dd value="M">Martes
+                <input type=checkbox name=dd value="MM">Miercoles
+                <input type=checkbox name=dd value="J">Jueves
+                <input type=checkbox name=dd value="V">Viernes
+                <input type=checkbox name=dd value="S">Sabado
+                <input type=checkbox name=dd value="D">Domingo
+            </div>
+            
         </div>
         
         <div class="Campo">
-            <label for="peso">Peso:</label>
-            <select name=peso>
-                <option> menos de 76[Kg] </option>
-                <option>76-101.6[Kg] </option>
-                <option>mayor de 101.6 [Kg] </option>            
-            </select>
+            <div class="col-25">
+                <label for="peso">Peso:</label>
+            </div>
+            <div class="col-75">
+                <select class="CampoText" name=peso>
+                    <option> menos de 76 [Kg] </option>
+                    <option>entre 76 y 101.6 [Kg] </option>
+                    <option>mayor de 101.6 [Kg] </option>            
+                </select>
+            </div>
+            
 
 
         </div>
         <input class="BotonCred" type=submit value="Crear credencial">
     </form>
-    <a href="Index.html">Heroes disponibles</a> 
-    <a href="RakingHeroes.html">Galeria de heroes</a> 
 
     
 
