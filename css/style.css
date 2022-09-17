@@ -211,10 +211,11 @@ video {
 #f2{
     font-family: var(--fuenteHeading);
     height:30%;
-    width: 55%;
+    width: 85%;
     float: left;
 }
 .formulario {
+    
     font-family: var(--fuenteHeading);
     background-color: var(--gris);
     padding: 1rem 1rem 0px 1.8rem;
@@ -222,15 +223,16 @@ video {
     margin: 1rem 3rem 0 3rem;
     
 }
-ul{
-    list-style-type: square;
-  }
 .formularios{
     font-family: var(--fuenteHeading);
     flex-direction: column;
     flex: auto;
     justify-content: space-between;
 }
+
+ul{
+    list-style-type: square;
+  }
 .FondoInscrip {
     background-image: url(../img/banner1.webp);
     font-family: var(--fuenteHeading);
@@ -290,6 +292,7 @@ ul{
     }
     #f2{
         width: 20%;
+        
     }
     #f1{
         flex-direction: row;
@@ -309,7 +312,7 @@ ul{
     }
 
 }
-@media (min-width:1440px){
+@media (min-width:2560px){
     body,h1,h2,h3,h4{
         font-size: 5rem;
     }
