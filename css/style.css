@@ -211,7 +211,7 @@ video {
 #f2{
     font-family: var(--fuenteHeading);
     height:30%;
-    width: 55%;
+    width: 85%;
     float: left;
 }
 .formulario {
@@ -219,8 +219,7 @@ video {
     background-color: var(--gris);
     padding: 1rem 1rem 0px 1.8rem;
     border: 2px solid var(--negro);
-    margin: 1rem 3rem 0 3rem;
-    
+    margin: 1rem 3rem 0rem 3rem;
 }
 ul{
     list-style-type: square;
